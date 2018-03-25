@@ -12,13 +12,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.MainActivity">
+        <activity android:name=".ui.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ui.details.DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:parentActivityName=".ui.main.MainActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivity"/>
+        </activity>
+
+
+        <!--This is required for immediate syncs -->
+        <service
+            android:name=".data.networks.SyncIntentService"
+            android:exported="false" />
+
+        <!-- This is the Service declaration used in conjunction with FirebaseJobDispatcher -->
+        <service
+            android:name=".data.networks.FirebaseJobService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE"/>
+            </intent-filter>
+        </service>
+
     </application>
 
 </manifest>
