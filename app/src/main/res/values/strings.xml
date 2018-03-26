@@ -13,7 +13,7 @@
     <!-- Detail Screen -->
     <string name="title_activity_detail">Details</string>
     <string name="detail_todays_forecast">Today\'s Forecast</string>
-    <string name="detail_share_hashtag">#SunshineApp</string>
+    <string name="detail_share_hashtag">FinalWeatherApp</string>
     <string name="detail_humidity">Humidity</string>
     <string name="detail_pressure">Pressure</string>
     <string name="detail_wind">Wind</string>
@@ -21,7 +21,6 @@
     <!-- Settings Screen -->
     <string name="title_activity_settings">Settings</string>
 
-    <!-- Label for the location preference [CHAR LIMIT=30] -->
     <string name="pref_location_label">Location</string>
 
     <!-- Key name for storing location in SharedPreferences [CHAR LIMIT=NONE] -->
@@ -148,14 +147,6 @@
 
     <string name="condition_unknown">Unknown (<xliff:g id="conditionId">%1$d</xliff:g>)</string>
 
-
-
-    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-      - Used for Accessibility purposes (Accessibility == a11y)                            -
-      -                                                                                    -
-      - Fun Fact: Accessibility is abbreviated a11y because accessibility starts with 'a', -
-      - followed by 11 letters, and then a 'y'. It is pronounced alley, like an alley cat. -
-      - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
     <string name="a11y_forecast">Forecast: <xliff:g id="condition">%1$s</xliff:g></string>
     <string name="a11y_forecast_icon">Forecast icon: <xliff:g id="condition">%1$s</xliff:g></string>
     <string name="a11y_high_temp">High: <xliff:g id="high">%1$s</xliff:g></string>
