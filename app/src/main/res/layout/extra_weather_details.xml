@@ -16,7 +16,6 @@
         android:paddingStart="@dimen/forecast_detail_horizontal_padding"
         android:paddingTop="@dimen/forecast_detail_vertical_padding">
 
-        <!-- This guideline divides the layout into a left and right half and is used for alignment -->
         <android.support.constraint.Guideline
             android:id="@+id/horizontal_middle"
             android:layout_width="wrap_content"
@@ -24,7 +23,6 @@
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.5"/>
 
-        <!-- Humidity label -->
         <TextView
             android:id="@+id/humidity_label"
             style="@style/DetailLabel"
@@ -34,7 +32,6 @@
             app:layout_constraintTop_toTopOf="@+id/extra_details"
             app:layout_constraintVertical_bias="0.33"/>
 
-        <!-- Humidity measurement -->
         <TextView
             android:id="@+id/humidity"
             style="@style/ExtraWeatherMeasurement"
@@ -42,7 +39,6 @@
             app:layout_constraintLeft_toLeftOf="@+id/horizontal_middle"
             tools:text="38%"/>
 
-        <!-- Pressure label -->
         <TextView
             android:id="@+id/pressure_label"
             style="@style/DetailLabel"
@@ -51,7 +47,6 @@
             app:layout_constraintLeft_toLeftOf="@+id/extra_details"
             app:layout_constraintTop_toTopOf="@+id/extra_details"/>
 
-        <!-- Pressure measurement -->
         <TextView
             android:id="@+id/pressure"
             style="@style/ExtraWeatherMeasurement"
@@ -59,7 +54,6 @@
             app:layout_constraintLeft_toLeftOf="@+id/horizontal_middle"
             tools:text="995 hPa"/>
 
-        <!-- Wind label -->
         <TextView
             android:id="@+id/wind_label"
             style="@style/DetailLabel"
@@ -69,7 +63,6 @@
             app:layout_constraintTop_toBottomOf="@+id/pressure_label"
             app:layout_constraintVertical_bias="0.65999997"/>
 
-        <!-- Wind measurement -->
         <TextView
             android:id="@+id/wind_measurement"
             style="@style/ExtraWeatherMeasurement"

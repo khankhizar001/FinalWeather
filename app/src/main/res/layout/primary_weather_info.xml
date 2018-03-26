@@ -27,7 +27,6 @@
             app:layout_constraintRight_toRightOf="parent"
             tools:text="Saturday, September 24"/>
 
-        <!-- Icon indicating weather condition -->
         <ImageView
             android:id="@+id/weather_icon"
             android:layout_width="96dp"
